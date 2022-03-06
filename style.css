@@ -1,0 +1,35 @@
+body{
+   background-color: rgb(221, 37, 129);
+
+}
+
+h1{
+    color: bisque;
+    font-family: serif;
+}
+
+
+#color-palette{
+    display: inline-block;
+    display: flex;
+ }
+
+#d1{
+background-color: black;
+}
+
+#d2{
+    background-color: blueviolet;
+}
+
+#d3{
+    background-color: chartreuse;
+}
+
+#d4{
+    background-color: aqua;
+}
+
+.color{
+    border: solid black 1px;
+}

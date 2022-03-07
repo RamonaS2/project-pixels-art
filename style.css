@@ -16,20 +16,35 @@ h1{
 
 #d1{
 background-color: black;
+padding: 50px;
 }
 
 #d2{
     background-color: blueviolet;
+    padding: 50px;
 }
 
 #d3{
     background-color: chartreuse;
+    padding: 50px;
 }
 
 #d4{
     background-color: aqua;
+    padding: 50px;
 }
 
 .color{
     border: solid black 1px;
+}
+
+#pixel-board{
+    display: inline-block;
+    display: flex;
+    border: solid black 2px;
+    padding-bottom: 40px;
+}
+
+.pixel{
+    background-color: white;
 }

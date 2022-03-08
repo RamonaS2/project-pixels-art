@@ -39,12 +39,22 @@ padding: 50px;
 }
 
 #pixel-board{
-    display: inline-block;
     display: flex;
     border: solid black 2px;
-    padding-bottom: 40px;
+    flex-wrap: wrap;
+    height: 210px;
+    width: 210px;
 }
 
 .pixel{
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
+    border: solid black 1px;
+    height: 40px;
+    width: 40px;
+}
+
+#bi{
+    display: inline;
 }

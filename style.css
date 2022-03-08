@@ -40,15 +40,10 @@ padding: 50px;
     width: 40px;
 }
 
-#pixel-board{
-    display: flex;
-    border: solid black 2px;
-    flex-wrap: wrap;
-}
 
 .pixel{
     display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
     background-color: white;
     border: solid black 1px;
     height: 40px;

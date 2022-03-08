@@ -1,7 +1,7 @@
 const quadro = document.getElementById('pixel-board');
 const pallet = document.getElementById('color-palette');
 const color = document.querySelectorAll('.color');
-const black = 'rgb(0, 0, 0)';
+let black = 'rgb(0, 0, 0)';
 
 let input = document.querySelector('#board-size');
 let botaoVqv = document.querySelector('#generate-board');
@@ -43,7 +43,8 @@ for (let index = 0; index < color.length; index+= 1) {
 
     const selectedColor = event.target;
     const object = window.getComputedStyle(selectedColor, null);
-    black = object.getPropertyValue('backgroundColor');
+    black = object.getPropertyValue('background-color');
+
 }
 }
 pallet.addEventListener('click', pullBlack);
@@ -53,8 +54,8 @@ function colorPixel (event){
     
     for (let i = 0; i < pixel.length; i += 1){
         if(event.target === pixel[i]){
-            pixel[i].style.backgroundColor = 'black';
-        }
+            pixel[i].style.backgroundColor = black;
+        } 
     }
 }
 quadro.addEventListener('click', colorPixel);
